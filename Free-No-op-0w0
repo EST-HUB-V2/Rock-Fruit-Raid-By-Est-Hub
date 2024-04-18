@@ -1,0 +1,27 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Rock AutoRaid")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Kill aura")
+
+KillingCheats:CreateToggle("KillAura", function(value)
+getgenv().G = true
+getgenv().Creator = 'https://discord.gg/B3HqPPzFYr - HalloweenGaster'
+while getgenv().G and getgenv().Creator == 'https://discord.gg/B3HqPPzFYr - HalloweenGaster' do
+wait(1)
+sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
+for i,d in pairs(game.Workspace:GetDescendants()) do
+    if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
+        d.Health = 0
+    end
+end
+end
+end)
+
+KillingCheats:CreateToggle("AutoTp", function(value)
+_G.Ez = value
+while _G.Ez do wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.608055, 16.9977837, 121.896065, 0.957527518, -1.49910324e-08, -0.28834191, 5.87890492e-09, 1, -3.24677707e-08, 0.28834191, 2.93936502e-08, 0.957527518)
+end
+end)
